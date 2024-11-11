@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto Gym Leader Challenge</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Local image */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            background-position: center; /* Centers the image */
+            color: white; /* Text color for better contrast */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for sections */
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .button {
+            background-color: #f39c12; /* Golden color for button */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #e67e22; /* Darker gold on hover */
+        }
+
+        /* Leaderboard iframe styling */
+        #leaderboard iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Styling for the details dropdown */
+        details {
+            background-color: #444; /* Darker background for the dropdown */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        summary:hover {
+            color: #f39c12; /* Golden color on hover */
+        }
+
+        details p {
+            padding-top: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Kanto Gym Leader Challenge</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#event-details">Event Details</a></li>
+                <li><a href="#gym-leaders">Gym Leaders</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Welcome to the Kanto Gym Leader Challenge! This event brings together trainers from around the world to battle the iconic Gym Leaders of the Kanto region. Test your skills, earn battle points, and claim your place at the top of the leaderboard!</p>
+        <p>The event will run for one month, with the start date announced soon. Get ready to challenge some of the most legendary leaders in the Pokémon world!</p>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details">
+        <h2>Event Details</h2>
+        <p>Welcome to the one-month Pokémon GO Gym Leader Challenge! This event will run for <strong>one month</strong> only. The start date will be announced later, and the event will run until <strong>[End Date]</strong>.</p>
+        <p>All trainers are welcome to participate! To take part, simply battle the Gym Leaders, earn battle points, and collect badges. The more battles you win, the more points you earn. Compete to climb the leaderboard and become the ultimate Kanto Gym Champion!</p>
+    </section>
+
+    <!-- Gym Leaders Section -->
+    <section id="gym-leaders">
+        <h2>Meet the Gym Leaders</h2>
+        <ul>
+            <li>Brock (Rock-type)
+                <!-- Dropdown for Brock's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Brock, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Misty (Water-type)
+                <!-- Dropdown for Misty's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Misty, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Lt. Surge (Electric-type)
+                <!-- Dropdown for Lt. Surge's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Lt. Surge, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Erika (Grass-type)
+                <!-- Dropdown for Erika's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Erika, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Koga (Poison-type)
+                <!-- Dropdown for Koga's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Koga, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Sabrina (Psychic-type)
+                <!-- Dropdown for Sabrina's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Sabrina, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Blaine (Fire-type)
+                <!-- Dropdown for Blaine's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Blaine, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+            <li>Giovanni (Ground-type)
+                <!-- Dropdown for Giovanni's Prerequisites -->
+                <details>
+                    <summary>View Prerequisites</summary>
+                    <p>To challenge Giovanni, your Pokémon must have a CP of 1500 or lower.</p>
+                </details>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <p>Check the current standings below and see who’s winning the battle for the Kanto Gym Leader Champion title!</p>
+        <!-- Embed the Google Sheet -->
+        <iframe src="https://docs.google.com/spreadsheets/d/your-google-sheet-id-here/pubhtml" frameborder="0"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kanto Gym Leader Challenge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
